@@ -1,0 +1,150 @@
+/*  from small devices to iphone x */
+@media only screen and (max-device-width: 812px){
+    .container {
+        max-width: 100%;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .MainNav .nav-navbar {
+        display: none;
+        background: #f4f3f4;
+        position: absolute;
+        z-index: 1;
+        float: right;
+        right: 0px;
+        height: 100vh;
+        padding: 0rem;
+        z-index: 1001;
+    }
+
+    .MainNav {
+        z-index: unset;
+    }
+
+    .MainNav .nav-navbar li {
+        float: none;
+        display: block;
+        width: 25rem;
+        height: 9rem;
+        background: url(../img/nav/mobile-nav-bg.png) no-repeat 0 0;
+        background-size: 25rem 9rem;
+        margin: 0px;
+        padding: 0.7rem;
+    }
+
+    .MainNav li .icon {
+        width: 8rem;
+        height: 7.3rem;
+        /* border: 1px solid; */
+        background-size: 44.4rem !important;
+    }
+
+    .MainNav li .title {
+        bottom: auto;
+        left: auto;
+        font-size: 3rem;
+        right: 10.1rem;
+        top: 2.3rem;
+    }
+
+    .jumbotron {
+        min-height: 31.7rem;
+    }
+
+    .brand-logo {
+        margin: auto;
+        position: absolute;
+        left: 0rem;
+        right: 0rem;
+        top: 0.5rem;
+    }
+
+    .indentImg {
+        display: none;
+    }
+
+    .bubbles {
+        right: 0px;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .stream {
+        width: 35.5rem;
+        border-image: url(../img/card/cardBlock.svg) 42 fill / 3rem;
+    }
+
+    .bootstrap-wrapper .col-4 {
+        float: unset;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    a.images-nav {
+        background: url(../img/nav/icons.svg) no-repeat;
+        background-position-x: 0px;
+    }
+
+    a.shows-nav {
+        background: url(../img/nav/icons.svg) no-repeat;
+        background-position-x: -144px;
+    }
+
+    a.videos-nav {
+        background: url(../img/nav/icons.svg) no-repeat;
+        background-position-x: -73px;
+    }
+
+    a.games-nav {
+        background: url(../img/nav/icons.svg) no-repeat;
+        background-position-x: -220px;
+    }
+
+    a.home-nav {
+        background: url(../img/nav/icons.svg) no-repeat;
+        background-position-x: -293px;
+    }
+}
+
+/* Landscape from small devices to iphone x */
+@media only screen and (max-device-width: 812px) and (orientation: landscape) {
+    .stream {
+        width: 66.5rem;
+        border-image: url(../img/card/cardBlock.svg) 42 fill / 3rem;
+    }
+}
+
+@media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait) {
+    .stream {
+        width: 67.5rem;
+        border-image: url(../img/card/cardBlock.svg) 42 fill / 3rem;
+    }
+
+    .stream-wrraper {
+        padding: 15px 0px;
+    }
+
+    .jumbotron {
+        min-height: 36.7rem;
+    }
+
+    .indentImg {
+        display: block;
+        width: 52rem;
+    }
+
+    .bubbles {
+        right: -39rem;
+    }
+    .MainNav .nav-navbar li{
+        width: 29rem;
+        background-size: 29rem 9rem;
+    }
+}

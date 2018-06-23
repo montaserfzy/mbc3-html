@@ -1,59 +1,107 @@
 @font-face {
     font-family: 'Asmaa';
     src: url('fonts/asmaa.eot');
-    src: url('fonts/asmaa.eot?#iefix') format('embedded-opentype'),
-         url('fonts/asmaa.woff') format('woff'),
-         url('fonts/asmaa.ttf')  format('truetype'), 
-         url('fonts/asmaa.otf') format('opentype');
-  }
+    src: url('fonts/asmaa.eot?#iefix') format('embedded-opentype'), url('fonts/asmaa.woff') format('woff'), url('fonts/asmaa.ttf') format('truetype'), url('fonts/asmaa.otf') format('opentype');
+}
+
 a:hover {
     text-decoration: none !important;
 }
+
 html, body {
     font-family: "Asmaa" !important;
-    margin: 0px;
-    padding: 0px;
-    font-size:10px;
+    margin: 0rem;
+    padding: 0rem;
+    font-size: 10px;
     text-align: right;
+    scroll-behavior: smooth
+}
+
+.show {
+    display: block !important;
 }
 
 .container-fluid {
-    width:100%;
+    width: 100%;
     margin: auto;
 }
 
 .container {
-    max-width: 1500px;
+    max-width: 150rem;
     margin: auto;
 }
 
 .MainNav {
-    max-width: 900px;
+    max-width: 90rem;
     height: 54px;
     position: relative;
     margin: auto;
     background: #fff;
-    z-index: 101;
+    z-index: 105;
 }
 
+.sr-only {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    padding: 0;
+    margin: -0.1rem;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    z-index: 9999999;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    height: 0.3rem;
+    width: 2.4rem;
+    margin-bottom: 0.4rem;
+    line-height: 2.6rem;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #3fb702;
+}
+
+.navbar-toggle {
+    position: absolute;
+    float: right;
+    right: 0rem;
+    padding: 1rem 1rem 0.5rem;
+    background-color: transparent;
+    top: 0.8rem;
+    border: 0rem;
+    display: none;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.MainNav li:first-child{
+    margin-right: 13.4rem;
+}
 .MainNav li {
-    float: left;
+    float: right;
     list-style: none;
-    /* height: 95px; */
-    width: 92px;
-    padding: 0px 15px;
+    /* height: 9.5rem; */
+    width: 9.2rem;
+    padding: 0rem 1.5rem;
     position: relative;
-    margin-left: 34px;
+    margin-right: 3.4rem;
 }
 
 /* Nav Icons Style */
-
 .MainNav li .icon {
-    width: 64px;
-    height: 61px;
+    width: 6.4rem;
+    height: 6.1rem;
     box-sizing: border-box;
     display: inline-block;
-    background-size: 395px !important;
+    background-size: 39.5rem !important;
     background-position-y: 0 !important;
     border: 1px solid transparent;
 }
@@ -85,9 +133,9 @@ a.home-nav {
 
 .MainNav li .title {
     position: absolute;
-    bottom: -6px;
-    left: 40px;
-    font-size: 24px;
+    bottom: -0.6rem;
+    left: 4rem;
+    font-size: 2.4rem;
     font-family: Asmaa;
     color: white;
     text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -95,23 +143,22 @@ a.home-nav {
 
 .brand-logo {
     float: right;
-    height: 54px;
-    width: 54px;
+    height: 5.4rem;
+    width: 5.4rem;
 }
+ 
 
 .brand-logo .logo {
-    width: 53px;
-    height: 53px;
     display: inline-block;
+    width: 4.4rem !important;
+    height: 4.4rem !important;
     background: url(../img/nav/icons.svg) no-repeat;
-    background-position-x: -260px;
     background-position-y: 0px;
-    background-size: 316px;
-    /* border: 1px solid red; */
+    background-size: 28.1rem !important;
+    background-position-x: -22.8rem !important;
 }
 
 /* Shows */
-
 .content {
     background: url(../img/show-bg.png) center -6px no-repeat #D10200;
     min-height: -webkit-fill-available;
@@ -127,7 +174,7 @@ a.home-nav {
 
 .indentImg {
     z-index: 100;
-    width: 500px;
+    width: 50rem;
     position: absolute;
     display: inline-block;
     margin: auto;
@@ -145,15 +192,19 @@ a.home-nav {
     right: -363px;
     left: 0px;
     top: 0px;
+    height: 304px;
 }
-.bubbles img{max-width:24.6rem}
+
+.bubbles img {
+    width: 24.6rem;
+}
 
 .tabs {
     /* border: 1px solid #fff; */
     margin: auto;
-    width: 980px;
+    width: 98rem;
     overflow: hidden;
-    margin-top: 285px;
+    margin-top: 28.5rem;
     z-index: 1002;
     position: relative;
 }
@@ -164,18 +215,19 @@ a.home-nav {
 
 .tabs li {
     float: left;
+    list-style: none;
     /* border: 1px solid blue; */
 }
 
 .tabs .tab {
     display: block;
-    width: 300px;
-    height: 205px;
+    width: 30rem;
+    height: 20.5rem;
     position: relative;
 }
 
 .tabs .tab img {
-    width: 250px;
+    width: 25rem;
     margin: auto;
     left: 0px;
     right: 0px;
@@ -194,21 +246,21 @@ a.home-nav {
     bottom: 0;
 }
 
-.streem {
-    width: 990px;
+.stream {
+    width: 99rem;
     margin: auto;
-    padding: 0px;
+    padding: 0rem;
     overflow: hidden;
-    border-image: url(../img/card/cardBlock.svg) 30 fill / 15px;
-    border-width: 24px;
+    border-image: url(../img/card/cardBlock.svg) 30 fill / 1.5rem;
+    border-width: 2.4rem;
     border-style: solid;
 }
 
 .card {
     position: relative;
-    padding: 0px;
-    width: 300px;
-    height: 225px;
+    padding: 0rem;
+    width: 30rem;
+    height: 22.5rem;
     /* border-image: url(../img/card/cardFrame.svg) 15 fill / 21px; */
     /* border-width: 9px; */
     /* border-style: solid; */
@@ -217,14 +269,15 @@ a.home-nav {
     transition-duration: .1s;
     filter: blur(0);
 }
-.card:before{
-    content:'';
-    width: 302px;
-    height: 228px;
+
+.card:before {
+    content: '';
+    width: 30.2rem;
+    height: 22.8rem;
     background: url(../img/card/cardFrame.svg) 100% 0 no-repeat;
-    display:block;
-    position:absolute;
-    background-size: 305px;
+    display: block;
+    position: absolute;
+    background-size: 30.5rem;
 }
 
 .card.no-border:before {
@@ -232,87 +285,112 @@ a.home-nav {
 }
 
 .ad-card {
-    padding: 6px;
+    padding: 0.6rem;
     position: relative;
-    height: 230px;
-    width: 306px;
+    height: 23rem;
+    width: 30.6rem;
 }
 
 .cardInfo {
     position: absolute;
-    width: 283px;
-    height: 26px;
-    bottom: 14px;
-    right: 3px;
+    width: 28.3rem;
+    height: 2.6rem;
+    bottom: 1.4rem;
+    right: 0.3rem;
     background: url(../img/card/info.svg) no-repeat top right;
-    background-size: 252px;
+    background-size: 25.2rem;
     text-align: right;
 }
 
 .cardTitle {
     display: inline-block;
     position: absolute;
-    width: 151px;
-    right: 15px;
+    width: 15.1rem;
+    right: 1.5rem;
     top: 0;
     font-size: 1.5rem;
 }
 
 .cardLogo {
-    width: 33px;
-    height: 28px;
-    background-size: 197px !important;
+    width: 3.3rem;
+    height: 2.8rem;
+    background-size: 19.7rem !important;
     /* border: 1px solid red; */
 }
 
-.image {
+.icone-image {
     background: url(../img/nav/icons.svg) no-repeat 0px -3px;
 }
-.show {
+
+.icone-show {
     background: url(../img/nav/icons.svg) no-repeat -65px -6px;
 }
-.game {
+
+.icone-game {
     background: url(../img/nav/icons.svg) no-repeat -97px -3px;
 }
-.home {
+
+.icone-home {
     background: url(../img/nav/icons.svg) no-repeat -132px -3px;
 }
-.video {
+
+.icone-video {
     background: url(../img/nav/icons.svg) no-repeat -33px -3px;
 }
 
 .cardImage {
-    width: 290px;
-    height: 220px;
-    margin-top: 4px;
-    margin-right: 7px;
+    width: 29rem;
+    height: 22rem;
+    margin-top: 0.4rem;
+    margin-right: 0.7rem;
 }
-[lazy]{
+
+[lazy] {
     background: red;
 }
-[lazy][src]{
+
+[lazy][src] {
     background: transparent
 }
 
-.streem-wrraper {
-    background: #fff;
+.stream-wrraper {
+    /* background: #fff; */
     overflow: auto;
-    padding: 0px;
+    padding: 0rem;
 }
 
 /* Update on the Bootstrap */
-
 .bootstrap-wrapper .row {
     display: inline;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
 }
 
-.bootstrap-wrapper .col-4 {
-    padding: 5px;
+.bootstrap-wrapper [class^="col-"]{
+    padding: 0.5rem;
     float: right;
     box-sizing: border-box;
 }
+.overlay{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background: rgba(0, 0, 0, 0.322);
+    top:0px;
+    bottom: 0px;
+    z-index: 103;
+    display: none;
+    overflow: hidden;
+    scroll-behavior: unset;
+}
+.show-overlay{
+    overflow: hidden
+}
+.show-overlay .overlay{
+    display: block
+}
+
+
 
 /* -- old anaimation */
 /*Bell Hovaring*/

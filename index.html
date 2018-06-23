@@ -8,21 +8,25 @@
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
   <header>
-    <div class="container">
+    <div class="container"> 
       <nav class="MainNav">
-        <ul>
+          <div class="brand-logo">
+              <a href="#" class="logo"></a>
+            </div>
+        <ul class="nav-navbar">
           <li>
-            <a href="#" class="icon images-nav">
-              <span class="title">صور</span>
+            <a href="#" class="icon home-nav">
+              <span class="title">الرئيسية</span>
             </a>
-          </li>
+          </li> 
           <li>
-            <a href="#" class="icon shows-nav">
-              <span class="title">عروض</span>
+            <a href="#" class="icon games-nav">
+              <span class="title">ألعاب</span>
             </a>
           </li>
           <li>
@@ -31,20 +35,24 @@
             </a>
           </li>
           <li>
-            <a href="#" class="icon games-nav">
-              <span class="title">ألعاب</span>
+            <a href="#" class="icon shows-nav">
+              <span class="title">عروض</span>
             </a>
           </li>
           <li>
-            <a href="#" class="icon home-nav">
-              <span class="title">الرئيسية</span>
+            <a href="#" class="icon images-nav">
+              <span class="title">صور</span>
             </a>
           </li>
         </ul>
-        <div class="brand-logo">
-          <a href="#" class="logo"></a>
-        </div>
+        <button type="button" class="navbar-toggle" data-toggle='nav-navbar'>
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </nav>
+      
     </div>
   </header>
   <div class="container-fluid" style="background: url(./img/show-bg.png) center -6px no-repeat ;background-color: #D10200">
@@ -76,53 +84,53 @@
           </ul>
         </div>
       </div>
-      <div class="streem bootstrap-wrapper">
-        <div class="streem-wrraper">
+      <div class="stream bootstrap-wrapper">
+        <div class="stream-wrraper">
           <div class="row">
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-6 col-xs-1">
               <div class="card">
                 <img class="cardImage" lazy data-src="https://placeimg.com/300/225/any" />
                 <div class="cardInfo">
                   <span class="cardTitle">اسم البرنامج</span>
-                  <div class="cardLogo game"></div>
+                  <div class="cardLogo icone-game"></div>
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-6 col-xs-1">
               <div class="card no-border">
                 <img class="cardImage" lazy data-src="https://placeimg.com/285/225/any" />
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-6 col-xs-1">
               <div class="card">
                 <img class="cardImage" lazy data-src="https://placeimg.com/285/225/any" />
                 <div class="cardInfo">
                   <span class="cardTitle">اسم البرنامج</span>
-                  <div class="cardLogo image"></div>
+                  <div class="cardLogo icone-image"></div>
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-6 col-xs-1">
               <div class="card">
                 <img class="cardImage" lazy data-src="https://placeimg.com/285/225/any" />
                 <div class="cardInfo">
                   <span class="cardTitle">اسم البرنامج</span>
-                  <div class="cardLogo show"></div>
-                </div>
-
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card">
-                <img class="cardImage" lazy data-src="https://placeimg.com/285/225/any" />
-                <div class="cardInfo">
-                  <span class="cardTitle">اسم البرنامج</span>
-                  <div class="cardLogo home"></div>
+                  <div class="cardLogo icone-show"></div>
                 </div>
 
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-6 col-xs-1">
+              <div class="card">
+                <img class="cardImage" lazy data-src="https://placeimg.com/285/225/any" />
+                <div class="cardInfo">
+                  <span class="cardTitle">اسم البرنامج</span>
+                  <div class="cardLogo icone-home"></div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-1">
               <div class="ad-card">
                 <img class="cardImage" src="http://via.placeholder.com/285x225" />
               </div>
@@ -130,24 +138,24 @@
           </div>
         </div>
       </div>
-      <div class="streem bootstrap-wrapper">
-        <div class="streem-wrraper">
+      <div class="stream bootstrap-wrapper">
+        <div class="stream-wrraper">
           <div class="row">
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-6 col-xs-1">
               <div class="card">
                 <img class="cardImage" lazy data-src="http://via.placeholder.com/300x225" />
                 <div class="cardInfo">
                   <span class="cardTitle">اسم البرنامج</span>
-                  <div class="cardLogo video"></div>
+                  <div class="cardLogo icone-video"></div>
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-6 col-xs-1">
               <div class="card">
                 <img class="cardImage" lazy data-src="http://via.placeholder.com/300x225" />
                 <div class="cardInfo">
                   <span class="cardTitle">اسم البرنامج</span>
-                  <div class="cardLogo game"></div>
+                  <div class="cardLogo icone-game"></div>
                 </div>
               </div>
             </div>
@@ -156,6 +164,7 @@
       </div>
     </div>
   </div>
+  <div class="overlay"></div>
   <script src="js/lib/jquery-3.3.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>
