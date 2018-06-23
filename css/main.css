@@ -1,0 +1,425 @@
+@font-face {
+    font-family: 'Asmaa';
+    src: url('fonts/asmaa.eot');
+    src: url('fonts/asmaa.eot?#iefix') format('embedded-opentype'),
+         url('fonts/asmaa.woff') format('woff'),
+         url('fonts/asmaa.ttf')  format('truetype'), 
+         url('fonts/asmaa.otf') format('opentype');
+  }
+a:hover {
+    text-decoration: none !important;
+}
+html, body {
+    font-family: "Asmaa" !important;
+    margin: 0px;
+    padding: 0px;
+    font-size:10px;
+    text-align: right;
+}
+
+.container-fluid {
+    width:100%;
+    margin: auto;
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.MainNav {
+    max-width: 900px;
+    height: 54px;
+    position: relative;
+    margin: auto;
+    background: #fff;
+    z-index: 101;
+}
+
+.MainNav li {
+    float: left;
+    list-style: none;
+    /* height: 95px; */
+    width: 92px;
+    padding: 0px 15px;
+    position: relative;
+    margin-left: 34px;
+}
+
+/* Nav Icons Style */
+
+.MainNav li .icon {
+    width: 64px;
+    height: 61px;
+    box-sizing: border-box;
+    display: inline-block;
+    background-size: 395px !important;
+    background-position-y: 0 !important;
+    border: 1px solid transparent;
+}
+
+a.images-nav {
+    background: url(../img/nav/icons.svg) no-repeat;
+    background-position-x: -8px;
+}
+
+a.shows-nav {
+    background: url(../img/nav/icons.svg) no-repeat;
+    background-position-x: -136px;
+}
+
+a.videos-nav {
+    background: url(../img/nav/icons.svg) no-repeat;
+    background-position-x: -71px;
+}
+
+a.games-nav {
+    background: url(../img/nav/icons.svg) no-repeat;
+    background-position-x: -197px;
+}
+
+a.home-nav {
+    background: url(../img/nav/icons.svg) no-repeat;
+    background-position-x: -260px;
+}
+
+.MainNav li .title {
+    position: absolute;
+    bottom: -6px;
+    left: 40px;
+    font-size: 24px;
+    font-family: Asmaa;
+    color: white;
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.brand-logo {
+    float: right;
+    height: 54px;
+    width: 54px;
+}
+
+.brand-logo .logo {
+    width: 53px;
+    height: 53px;
+    display: inline-block;
+    background: url(../img/nav/icons.svg) no-repeat;
+    background-position-x: -260px;
+    background-position-y: 0px;
+    background-size: 316px;
+    /* border: 1px solid red; */
+}
+
+/* Shows */
+
+.content {
+    background: url(../img/show-bg.png) center -6px no-repeat #D10200;
+    min-height: -webkit-fill-available;
+    width: 100%;
+    padding-bottom: 50px
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    position: relative;
+    /* border: 1px solid #fff; */
+}
+
+.indentImg {
+    z-index: 100;
+    width: 500px;
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    left: -124px;
+    right: 0px;
+    top: 0;
+}
+
+.bubbles {
+    z-index: 101;
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    width: 248px;
+    right: -363px;
+    left: 0px;
+    top: 0px;
+}
+.bubbles img{max-width:24.6rem}
+
+.tabs {
+    /* border: 1px solid #fff; */
+    margin: auto;
+    width: 980px;
+    overflow: hidden;
+    margin-top: 285px;
+    z-index: 1002;
+    position: relative;
+}
+
+.tabs::after {
+    clear: both;
+}
+
+.tabs li {
+    float: left;
+    /* border: 1px solid blue; */
+}
+
+.tabs .tab {
+    display: block;
+    width: 300px;
+    height: 205px;
+    position: relative;
+}
+
+.tabs .tab img {
+    width: 250px;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+}
+
+.tabs .title {
+    text-shadow: 3px 3px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color: #fff;
+    font-size: 41px;
+    text-decoration: none !important;
+    position: absolute;
+    right: 50px;
+    left: auto;
+    top: auto;
+    bottom: 0;
+}
+
+.streem {
+    width: 990px;
+    margin: auto;
+    padding: 0px;
+    overflow: hidden;
+    border-image: url(../img/card/cardBlock.svg) 30 fill / 15px;
+    border-width: 24px;
+    border-style: solid;
+}
+
+.card {
+    position: relative;
+    padding: 0px;
+    width: 300px;
+    height: 225px;
+    /* border-image: url(../img/card/cardFrame.svg) 15 fill / 21px; */
+    /* border-width: 9px; */
+    /* border-style: solid; */
+    transform: scale3d(1,1,1);
+    transition-property: transform;
+    transition-duration: .1s;
+    filter: blur(0);
+}
+.card:before{
+    content:'';
+    width: 302px;
+    height: 228px;
+    background: url(../img/card/cardFrame.svg) 100% 0 no-repeat;
+    display:block;
+    position:absolute;
+    background-size: 305px;
+}
+
+.card.no-border:before {
+    display: none;
+}
+
+.ad-card {
+    padding: 6px;
+    position: relative;
+    height: 230px;
+    width: 306px;
+}
+
+.cardInfo {
+    position: absolute;
+    width: 283px;
+    height: 26px;
+    bottom: 14px;
+    right: 3px;
+    background: url(../img/card/info.svg) no-repeat top right;
+    background-size: 252px;
+    text-align: right;
+}
+
+.cardTitle {
+    display: inline-block;
+    position: absolute;
+    width: 151px;
+    right: 15px;
+    top: 0;
+    font-size: 1.5rem;
+}
+
+.cardLogo {
+    width: 33px;
+    height: 28px;
+    background-size: 197px !important;
+    /* border: 1px solid red; */
+}
+
+.image {
+    background: url(../img/nav/icons.svg) no-repeat 0px -3px;
+}
+.show {
+    background: url(../img/nav/icons.svg) no-repeat -65px -6px;
+}
+.game {
+    background: url(../img/nav/icons.svg) no-repeat -97px -3px;
+}
+.home {
+    background: url(../img/nav/icons.svg) no-repeat -132px -3px;
+}
+.video {
+    background: url(../img/nav/icons.svg) no-repeat -33px -3px;
+}
+
+.cardImage {
+    width: 290px;
+    height: 220px;
+    margin-top: 4px;
+    margin-right: 7px;
+}
+[lazy]{
+    background: red;
+}
+[lazy][src]{
+    background: transparent
+}
+
+.streem-wrraper {
+    background: #fff;
+    overflow: auto;
+    padding: 0px;
+}
+
+/* Update on the Bootstrap */
+
+.bootstrap-wrapper .row {
+    display: inline;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.bootstrap-wrapper .col-4 {
+    padding: 5px;
+    float: right;
+    box-sizing: border-box;
+}
+
+/* -- old anaimation */
+/*Bell Hovaring*/
+/* .tabs .tab:hover,
+.MainNav li:hover,
+.indentImg,
+.bubbles,
+.card:hover ,
+.indentImg:hover img,.bubbles:hover img {
+    animation-delay: linear;
+    animation-duration: 1s;
+    animation-name: rangBell;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1
+}
+.logo:hover{
+    transform: scale(1.09);
+    transition-timing-function: ease-in;
+    filter: blur(0);
+} 
+@keyframes rangBell {
+    0% {
+        transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    3.4% {
+        transform: matrix3d(1.034, 0, 0, 0, 0, 1.03, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    4.3% {
+        transform: matrix3d(1.03, 0, 0, 0, 0, 1.023, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    4.7% {
+        transform: matrix3d(1.028, 0, 0, 0, 0, 1.02, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    6.81% {
+        transform: matrix3d(1.017, 0, 0, 0, 0, 1.005, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    8.61% {
+        transform: matrix3d(1.009, 0, 0, 0, 0, .995, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    9.41% {
+        transform: matrix3d(1.006, 0, 0, 0, 0, .992, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    10.21% {
+        transform: matrix3d(1.003, 0, 0, 0, 0, .989, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    12.91% {
+        transform: matrix3d(.995, 0, 0, 0, 0, .984, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    13.61% {
+        transform: matrix3d(.994, 0, 0, 0, 0, .983, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    14.11% {
+        transform: matrix3d(.993, 0, 0, 0, 0, .983, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    17.22% {
+        transform: matrix3d(.99, 0, 0, 0, 0, .987, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    17.52% {
+        transform: matrix3d(.99, 0, 0, 0, 0, .988, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    18.72% {
+        transform: matrix3d(.989, 0, 0, 0, 0, .991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    21.32% {
+        transform: matrix3d(.99, 0, 0, 0, 0, .997, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    24.32% {
+        transform: matrix3d(.992, 0, 0, 0, 0, 1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    25.23% {
+        transform: matrix3d(.993, 0, 0, 0, 0, 1.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    28.33% {
+        transform: matrix3d(.996, 0, 0, 0, 0, 1.005, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    29.03% {
+        transform: matrix3d(.997, 0, 0, 0, 0, 1.005, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    29.93% {
+        transform: matrix3d(.998, 0, 0, 0, 0, 1.005, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    35.54% {
+        transform: matrix3d(1.001, 0, 0, 0, 0, 1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    36.74% {
+        transform: matrix3d(1.001, 0, 0, 0, 0, 1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    39.44% {
+        transform: matrix3d(1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    41.04% {
+        transform: matrix3d(1.002, 0, 0, 0, 0, .999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    44.44% {
+        transform: matrix3d(1.002, 0, 0, 0, 0, .998, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+    100%,
+    52.15%,
+    59.86%,
+    61.66%,
+    63.26%,
+    75.28%,
+    83.98%,
+    85.49%,
+    90.69% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+}
+
+*/
